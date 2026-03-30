@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Pilih Tidak (PC & Mobile)",
+  "version": "1.0",
+  "description": "Menjalankan kode F12 secara otomatis untuk memilih opsi Tidak",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
